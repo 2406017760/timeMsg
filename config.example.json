@@ -9,11 +9,9 @@
   "once_grace_minutes": 15,
 
   "tunnel": {
-    "mode": "off",
-    "cloudflared": "",
-    "named_tunnel": "",
-    "token": "",
-    "public_url": "",
+    "mode": "named",
+    "token": "这里粘贴隧道 token（控制台里那串 eyJ 开头的长字符串）",
+    "public_url": "https://timemsg.你的域名.com",
     "bind_localhost": true
   },
 
