@@ -1,0 +1,67 @@
+{
+  "listen_host": "0.0.0.0",
+  "listen_port": 8765,
+  "token": "把这里改成一串随机字符",
+
+  "window_start": "06:30",
+  "window_end": "08:30",
+  "nothing_sentinel": "__NOTHING__",
+  "once_grace_minutes": 15,
+
+  "tunnel": {
+    "mode": "off",
+    "cloudflared": "",
+    "named_tunnel": "",
+    "token": "",
+    "public_url": "",
+    "bind_localhost": true
+  },
+
+  "context": {
+    "enabled": true,
+    "directory": "profile",
+    "max_total_chars": 30000,
+    "max_file_chars": 20000,
+    "strip_markdown": true,
+    "extensions": [".md", ".txt"]
+  },
+
+  "ai": {
+    "base_url": "https://api.deepseek.com",
+    "path": "/chat/completions",
+    "model": "deepseek-chat",
+    "api_key": "",
+    "temperature": 1.0,
+    "max_tokens": 1200,
+    "timeout_seconds": 60,
+    "attempts": 3,
+    "backoff_seconds": 15
+  },
+
+  "prompt": {
+    "system_file": "prompts/greeting.txt",
+    "system": "",
+    "min_chars": 120,
+    "max_chars": 360,
+    "keep_newlines": true,
+    "hard_max_chars": 600,
+    "daily_reminder_rate": 0.35,
+    "themes": [
+      "该做的事",
+      "要提醒的一件事",
+      "健康与作息",
+      "正在推进的事",
+      "我的看法",
+      "最近的变化",
+      "睡眠与精力",
+      "活动量"
+    ],
+    "styles": [
+      "随意一点",
+      "直说，不绕弯",
+      "像微信里随手发的",
+      "松弛不端着",
+      "不长篇大论"
+    ]
+  }
+}
